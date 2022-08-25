@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Satoshi', sans-serif;
+}
+@media (min-width: 700px){
+    body{
+        background: red;
+    }
+    .pg1, .pg2{
+        display: none;
+    }
+}
+@mixin pageStr {
+    background: black;
+    border: 2px solid #FF6600;
+    height: 100vh;
+}
+@mixin logo {
+    color: white;
+    span {
+        color: #FF6600;
+    }
+}
+
+.pg1{
+    @include pageStr();
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+    img{
+        margin-top: 60%;
+        margin-bottom: 20px;
+    }
+    h3{
+        @include logo();
+    }
+}
+.pg2 {
+    @include pageStr();
+
+    img {
+        margin: 40px 0 0 20px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo {
+        @include logo();
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .text {
+        color: white;
+        font-size: 38px;
+        font-weight: 700;
+        margin: 100px 0 0 20px;
+    }
+    .hold{
+        
+    }
+}
