@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
 @media (min-width: 700px) {
   body {
     background: red;
@@ -9,5 +13,19 @@
 }
 .pg1 {
   background: black;
-  border: 2px solid black;
+  border: 2px solid #FF6600;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+.pg1 img {
+  margin-top: 60%;
+  margin-bottom: 23px;
+}
+.pg1 h3 {
+  font-size: 38px;
+  color: white;
+}
+.pg1 h3 span {
+  color: #FF6600;
 }/*# sourceMappingURL=style.css.map */
