@@ -131,6 +131,16 @@ body{
         label{
             display: block;
             text-align: left;
+           
+            /*&::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin-left: 100px;
+                color: red;
+                background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.33301 6.99984V5.6665C4.33301 3.45984 4.99967 1.6665 8.33301 1.6665C11.6663 1.6665 12.333 3.45984 12.333 5.6665V6.99984' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.33366 12.6668C9.25413 12.6668 10.0003 11.9206 10.0003 11.0002C10.0003 10.0797 9.25413 9.3335 8.33366 9.3335C7.41318 9.3335 6.66699 10.0797 6.66699 11.0002C6.66699 11.9206 7.41318 12.6668 8.33366 12.6668Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.667 15H5.00033C2.33366 15 1.66699 14.3333 1.66699 11.6667V10.3333C1.66699 7.66667 2.33366 7 5.00033 7H11.667C14.3337 7 15.0003 7.66667 15.0003 10.3333V11.6667C15.0003 14.3333 14.3337 15 11.667 15Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }*/
         }
         input{
             background: rgba(196, 196, 196, 0.1);
@@ -166,7 +176,10 @@ body{
                 border: 1px solid #FF6600;
                 width: 95%;
                 margin: 100px 0 40px 0;
-
+                &:focus{
+                    background-color: #FF6600;
+                    border: none;
+                }
             }
         }
     }
