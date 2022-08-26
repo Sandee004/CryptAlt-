@@ -37,6 +37,16 @@ body{
     font-size: 17px;
     color: #ECECEC;
 }
+@mixin passwordField{
+    @include btn();
+    background: rgba(196, 196, 196, 0.1);
+    border: none;
+    margin: 6px 0 15px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: 500;
+    width: 78%;
+}
 
 .pg1{
     @include pageStr();
@@ -131,32 +141,45 @@ body{
         label{
             display: block;
             text-align: left;
-           
-            /*&::before{
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                margin-left: 100px;
-                color: red;
-                background: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.33301 6.99984V5.6665C4.33301 3.45984 4.99967 1.6665 8.33301 1.6665C11.6663 1.6665 12.333 3.45984 12.333 5.6665V6.99984' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.33366 12.6668C9.25413 12.6668 10.0003 11.9206 10.0003 11.0002C10.0003 10.0797 9.25413 9.3335 8.33366 9.3335C7.41318 9.3335 6.66699 10.0797 6.66699 11.0002C6.66699 11.9206 7.41318 12.6668 8.33366 12.6668Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.667 15H5.00033C2.33366 15 1.66699 14.3333 1.66699 11.6667V10.3333C1.66699 7.66667 2.33366 7 5.00033 7H11.667C14.3337 7 15.0003 7.66667 15.0003 10.3333V11.6667C15.0003 14.3333 14.3337 15 11.667 15Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-            }*/
         }
         input{
-            background: rgba(196, 196, 196, 0.1);
-            @include btn();
-            border: none;
-            margin: 6px 0 15px;
-            border-radius: 5px;
-            text-align: left;
-            font-weight: 500;
-            width: 92%;
+            @include passwordField();
             &:focus{
                 border: none;
                 outline-color: #ECECEC;
                 outline-width: 0.2px;
             }
         }
+        #email{
+            width: 86%;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.10622 7.24683C8.03955 7.24016 7.95955 7.24016 7.88622 7.24683C6.29955 7.1935 5.03955 5.8935 5.03955 4.2935C5.03955 2.66016 6.35955 1.3335 7.99955 1.3335C9.63288 1.3335 10.9596 2.66016 10.9596 4.2935C10.9529 5.8935 9.69288 7.1935 8.10622 7.24683Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.77299 9.7065C3.15965 10.7865 3.15965 12.5465 4.77299 13.6198C6.60632 14.8465 9.61299 14.8465 11.4463 13.6198C13.0597 12.5398 13.0597 10.7798 11.4463 9.7065C9.61966 8.4865 6.61299 8.4865 4.77299 9.7065Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 6px;
+            padding-left: 36px;
+        }
+        #password1, #password2{
+            background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.33301 6.99984V5.6665C4.33301 3.45984 4.99967 1.6665 8.33301 1.6665C11.6663 1.6665 12.333 3.45984 12.333 5.6665V6.99984' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.33366 12.6668C9.25413 12.6668 10.0003 11.9206 10.0003 11.0002C10.0003 10.0797 9.25413 9.3335 8.33366 9.3335C7.41318 9.3335 6.66699 10.0797 6.66699 11.0002C6.66699 11.9206 7.41318 12.6668 8.33366 12.6668Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.667 15H5.00033C2.33366 15 1.66699 14.3333 1.66699 11.6667V10.3333C1.66699 7.66667 2.33366 7 5.00033 7H11.667C14.3337 7 15.0003 7.66667 15.0003 10.3333V11.6667C15.0003 14.3333 14.3337 15 11.667 15Z' stroke='%23C2C2C4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 6px;
+            padding: 10px 40px 10px 36px;
+
+            
+        }
+        #eye-icon1{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            margin: -45px 0 0 129px; 
+        }
+        #eye-icon2{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            margin: -45px 0 0 129px;
+        }
+
         p{
             @include logo();
             text-align: right;

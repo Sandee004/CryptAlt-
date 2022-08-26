@@ -16,7 +16,7 @@ body {
 }
 .pg1 {
   background: #292626;
-  height: 100vh;
+  height: cover;
   font-size: 38px;
   text-align: center;
   justify-content: center;
@@ -34,7 +34,7 @@ body {
 
 .pg2 {
   background: #292626;
-  height: 100vh;
+  height: cover;
 }
 .pg2 img {
   margin: 40px 0 0 20px;

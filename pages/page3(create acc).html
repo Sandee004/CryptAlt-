@@ -16,18 +16,21 @@
 
         <form>
             <label>Email</label>
-            <input type="email" required>
+            <input type="email" id="email" required>
+            
 
             <label>Password</label>
-            <input type="password" id="password1" maxlength="10" required>
+            <input type="password" id="password1" maxlength="10">
+            <img class="eye" id="eye-icon1" src="images/eye.png">
 
             <label>Confirm password</label>
-            <input id="password2" type="password" required>
+            <input id="password2" type="password" maxlength="10">
+            <img class="eye" id="eye-icon2" src="images/eye.png">
 
             <p>Have an account? <span><a href="">Sign In</a></span></p>
 
             <a href="">
-                <button id="btn">Submit</button>
+                <button id="btn" onclick="confirm">Submit</button>
             </a>
         </form>
     </div>
@@ -36,11 +39,20 @@
         var pass1= document.getElementById("password1");
         var pass2= document.getElementById("password2");
         var btn= document.getElementById("btn");
-        btn.addEventListener("click", function() {
-            if (pass1 !== pass2) {
-                alert("Passwords are not the same")
-            }
-        })
+        const togglePassword1= document.getElementById("eye-icon1");
+        const togglePassword2= document.getElementById("eye-icon2");
+
+        togglePassword1.addEventListener("click", function () {
+            // toggle the type attribute
+            const type1 = pass1.getAttribute("type") === "password" ? "text" : "password";
+            pass1.setAttribute("type", type1)
+        });
+
+        togglePassword2.addEventListener("click", function () {
+            // toggle the type attribute
+            const type2 = pass2.getAttribute("type") === "password" ? "text" : "password";
+            pass2.setAttribute("type", type2)
+        });
     </script>
 </body>
 </html>
