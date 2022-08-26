@@ -3,25 +3,31 @@
 }
 body{
     font-family: 'Satoshi', sans-serif;
+    color: white;
 }
 @media (min-width: 700px){
     body{
         background: red;
     }
-    .pg1, .pg2{
+    .pg1, .pg2, .pg3{
         display: none;
     }
 }
 @mixin pageStr {
-    background: black;
+    background: #292626;
    /* border: 2px solid #FF6600;*/
-    height: 100vh;
+    height: cover;
 }
 @mixin logo {
     color: white;
     span {
         color: #FF6600;
     }
+}
+@mixin logoPosition {
+    margin: 40px 0 0 15px;
+    width: 60px;
+    height: 60px;
 }
 @mixin btn{
     border-radius: 4px;
@@ -50,9 +56,7 @@ body{
     @include pageStr();
 
     img {
-        margin: 40px 0 0 15px;
-        width: 60px;
-        height: 60px;
+        @include logoPosition();
     }
 
     .logo {
@@ -102,5 +106,69 @@ body{
         display: block;
         font-weight: 500;
         @include btn();
+    }
+}
+.pg3{
+    @include pageStr();
+    img{
+        @include logoPosition();
+    }
+    .smallTxt{
+        font-size: 14px;
+        margin: 65px 0 2px 0;
+        text-align: center;
+        color: white;
+    }
+    .bigTxt{
+        @include logo();
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+    form{
+        margin: 0 20px 0 20px;
+        text-align: center;
+        label{
+            display: block;
+            text-align: left;
+        }
+        input{
+            background: rgba(196, 196, 196, 0.1);
+            @include btn();
+            border: none;
+            margin: 6px 0 15px;
+            border-radius: 5px;
+            text-align: left;
+            font-weight: 500;
+            width: 92%;
+            &:focus{
+                border: none;
+                outline-color: #ECECEC;
+                outline-width: 0.2px;
+            }
+        }
+        p{
+            @include logo();
+            text-align: right;
+            margin-right: 10px;
+            font-size: 17px;
+            a{
+                text-decoration: none;
+                color: #FF6600;
+            }
+        }
+        a{
+            text-decoration: none;
+            button{
+                @include btn();
+                background: transparent;
+                color: white;
+                border: 1px solid #FF6600;
+                width: 95%;
+                margin: 100px 0 40px 0;
+                
+            }
+        }
     }
 }

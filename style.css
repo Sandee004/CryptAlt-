@@ -15,7 +15,7 @@ body {
   }
 }
 .pg1 {
-  background: black;
+  background: #292626;
   border: 2px solid #FF6600;
   height: 100vh;
   font-size: 38px;
@@ -34,8 +34,7 @@ body {
 }
 
 .pg2 {
-  background: black;
-  border: 2px solid #FF6600;
+  background: #292626;
   height: 100vh;
 }
 .pg2 img {
