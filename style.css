@@ -16,7 +16,7 @@ body {
 }
 .pg1 {
   background: #292626;
-  height: cover;
+  height: 100vh;
   font-size: 38px;
   text-align: center;
   justify-content: center;
