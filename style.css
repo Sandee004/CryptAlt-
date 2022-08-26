@@ -10,13 +10,12 @@ body {
   body {
     background: red;
   }
-  .pg1, .pg2 {
+  .pg1, .pg2, .pg3 {
     display: none;
   }
 }
 .pg1 {
   background: #292626;
-  border: 2px solid #FF6600;
   height: 100vh;
   font-size: 38px;
   text-align: center;

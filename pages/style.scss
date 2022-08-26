@@ -15,7 +15,6 @@ body{
 }
 @mixin pageStr {
     background: #292626;
-   /* border: 2px solid #FF6600;*/
     height: cover;
 }
 @mixin logo {
@@ -167,7 +166,7 @@ body{
                 border: 1px solid #FF6600;
                 width: 95%;
                 margin: 100px 0 40px 0;
-                
+
             }
         }
     }

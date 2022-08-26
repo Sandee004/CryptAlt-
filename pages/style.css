@@ -17,7 +17,6 @@ body {
 }
 .pg1 {
   background: #292626;
-  /* border: 2px solid #FF6600;*/
   height: cover;
   font-size: 38px;
   text-align: center;
@@ -36,7 +35,6 @@ body {
 
 .pg2 {
   background: #292626;
-  /* border: 2px solid #FF6600;*/
   height: cover;
 }
 .pg2 img {
@@ -109,7 +107,6 @@ body {
 
 .pg3 {
   background: #292626;
-  /* border: 2px solid #FF6600;*/
   height: cover;
 }
 .pg3 img {
