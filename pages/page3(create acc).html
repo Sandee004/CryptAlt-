@@ -29,7 +29,7 @@
 
             <p>Have an account? <span><a href="">Sign In</a></span></p>
 
-            <a href="">
+            <a id="submit" href="">
                 <button id="btn" onclick="confirm">Submit</button>
             </a>
         </form>
@@ -38,6 +38,7 @@
     <script>
         var pass1= document.getElementById("password1");
         var pass2= document.getElementById("password2");
+        var submit= document.getElementById("submit");
         var btn= document.getElementById("btn");
         const togglePassword1= document.getElementById("eye-icon1");
         const togglePassword2= document.getElementById("eye-icon2");
@@ -53,6 +54,18 @@
             const type2 = pass2.getAttribute("type") === "password" ? "text" : "password";
             pass2.setAttribute("type", type2)
         });
+
+        //Password validation
+        btn.addEventListener("click", function() {
+            if (pass1.value === "" || pass1.value.length <= 6) {
+                alert("Chief check your password....something dey sup")
+            }
+            
+            if (pass1 !== pass2) {
+                alert("Guy....no stress me na!! Passwords don't match")
+            }
+            
+        })
     </script>
 </body>
 </html>
