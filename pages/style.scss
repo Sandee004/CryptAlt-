@@ -9,7 +9,7 @@ body{
     body{
         background: red;
     }
-    .pg1, .pg2, .pg3{
+    .pg1, .pg2, .pg3, .pg4{
         display: none;
     }
 }
@@ -41,11 +41,16 @@ body{
     @include btn();
     background: rgba(196, 196, 196, 0.1);
     border: none;
-    margin: 6px 0 15px;
+    margin: 6px 0 20px 0;
     border-radius: 5px;
     text-align: left;
     font-weight: 500;
     width: 78%;
+}
+@mixin pageHeader{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .pg1{
@@ -171,13 +176,13 @@ body{
             position: absolute;
             width: 25px;
             height: 25px;
-            margin: -45px 0 0 129px; 
+            margin: -50px 0 0 129px; 
         }
         #eye-icon2{
             width: 25px;
             height: 25px;
             position: absolute;
-            margin: -45px 0 0 129px;
+            margin: -50px 0 0 129px;
         }
 
         p{
@@ -190,20 +195,43 @@ body{
                 color: #FF6600;
             }
         }
-        a{
-            text-decoration: none;
-            button{
-                @include btn();
-                background: transparent;
-                color: white;
-                border: 1px solid #FF6600;
-                width: 95%;
-                margin: 100px 0 40px 0;
-                &:focus{
-                    background-color: #FF6600;
-                    border: none;
-                }
+        button{
+            @include btn();
+            background: transparent;
+            color: white;
+            border: 1px solid #FF6600;
+            width: 95%;
+            margin: 100px 0 40px 0;
+            &:hover{
+                background-color: #FF6600;
+                border: none;
             }
+        }
+    }
+}
+.pg4{
+    @include pageStr();
+    height: 100vh;
+    p{
+        @include pageHeader();
+        margin-bottom: 70px;
+        padding-top: 150px;
+    }
+    form{
+        margin-left: 20px;
+        label{
+            display: block;
+            text-align: left;
+        }
+        input{
+            @include passwordField();
+            width: 90%;
+        }
+        .checkbox{
+            margin: 10px 3px 2px 0px;
+            display: block;
+            text-align: left;
+            float: left;
         }
     }
 }

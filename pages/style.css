@@ -11,7 +11,7 @@ body {
   body {
     background: red;
   }
-  .pg1, .pg2, .pg3 {
+  .pg1, .pg2, .pg3, .pg4 {
     display: none;
   }
 }
@@ -148,7 +148,7 @@ body {
   color: #ECECEC;
   background: rgba(196, 196, 196, 0.1);
   border: none;
-  margin: 6px 0 15px;
+  margin: 6px 0 20px 0;
   border-radius: 5px;
   text-align: left;
   font-weight: 500;
@@ -178,13 +178,13 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  margin: -45px 0 0 129px;
+  margin: -50px 0 0 129px;
 }
 .pg3 form #eye-icon2 {
   width: 25px;
   height: 25px;
   position: absolute;
-  margin: -45px 0 0 129px;
+  margin: -50px 0 0 129px;
 }
 .pg3 form p {
   color: white;
@@ -199,10 +199,7 @@ body {
   text-decoration: none;
   color: #FF6600;
 }
-.pg3 form a {
-  text-decoration: none;
-}
-.pg3 form a button {
+.pg3 form button {
   border-radius: 4px;
   width: 90%;
   padding: 10px;
@@ -216,7 +213,50 @@ body {
   width: 95%;
   margin: 100px 0 40px 0;
 }
-.pg3 form a button:focus {
+.pg3 form button:hover {
   background-color: #FF6600;
   border: none;
+}
+
+.pg4 {
+  background: #292626;
+  height: cover;
+  height: 100vh;
+}
+.pg4 p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  padding-top: 150px;
+}
+.pg4 form {
+  margin-left: 20px;
+}
+.pg4 form label {
+  display: block;
+  text-align: left;
+}
+.pg4 form input {
+  border-radius: 4px;
+  width: 90%;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+  color: #ECECEC;
+  background: rgba(196, 196, 196, 0.1);
+  border: none;
+  margin: 6px 0 20px 0;
+  border-radius: 5px;
+  text-align: left;
+  font-weight: 500;
+  width: 78%;
+  width: 90%;
+}
+.pg4 form .checkbox {
+  margin: 10px 3px 2px 0px;
+  display: block;
+  text-align: left;
+  float: left;
 }/*# sourceMappingURL=style.css.map */

@@ -63,13 +63,15 @@
         //Password validation
         btn.addEventListener("click", function() {
             if (pass1.value === "" || pass1.value.length <= 6) {
-                alert("Chief check your password....something dey sup")
+                alert("Minimum characters is 7 Chief")
             }
             
-            else if (pass1 !== pass2) {
+            else if (pass1.value !== pass2.value) {
                 alert("Guy....no stress me na!! Passwords don't match")
             }
-            
+            else if (pass1.value === pass2.value) {
+                window.open("page4(personal info).html", "_blank")
+            }
         })
     </script>
 </body>
