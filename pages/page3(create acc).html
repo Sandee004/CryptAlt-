@@ -16,12 +16,13 @@
 
         <form>
             <label>Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email">
             
 
             <label>Password</label>
             <input type="password" id="password1" maxlength="10">
             <img class="eye" id="eye-icon1" src="images/eye.png">
+            
 
             <label>Confirm password</label>
             <input id="password2" type="password" maxlength="10">
@@ -36,12 +37,15 @@
     </div>
 
     <script>
+        const email= document.getElementById("email")
         var pass1= document.getElementById("password1");
         var pass2= document.getElementById("password2");
         var submit= document.getElementById("submit");
         var btn= document.getElementById("btn");
         const togglePassword1= document.getElementById("eye-icon1");
         const togglePassword2= document.getElementById("eye-icon2");
+
+        email.setAttribute('required', "");
 
         togglePassword1.addEventListener("click", function () {
             // toggle the type attribute
@@ -55,13 +59,14 @@
             pass2.setAttribute("type", type2)
         });
 
+
         //Password validation
         btn.addEventListener("click", function() {
             if (pass1.value === "" || pass1.value.length <= 6) {
                 alert("Chief check your password....something dey sup")
             }
             
-            if (pass1 !== pass2) {
+            else if (pass1 !== pass2) {
                 alert("Guy....no stress me na!! Passwords don't match")
             }
             
