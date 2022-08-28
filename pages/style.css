@@ -11,7 +11,7 @@ body {
   body {
     background: red;
   }
-  .pg1, .pg2, .pg3, .pg4 {
+  .pg1, .pg2, .pg3, .pg4, .pg5, .pg6 {
     display: none;
   }
 }
@@ -93,7 +93,6 @@ body {
 .pg2 button {
   background: transparent;
   border: 1px solid white;
-  margin: 0 auto 12px auto;
   display: block;
   font-weight: 500;
   border-radius: 4px;
@@ -103,6 +102,7 @@ body {
   text-align: center;
   font-size: 17px;
   color: #ECECEC;
+  margin: 0 auto 20px auto;
 }
 
 .pg3 {
@@ -284,4 +284,82 @@ body {
 .pg4 form button:hover {
   background-color: #FF6600;
   border: none;
+}
+
+.pg5 {
+  background: #292626;
+  height: cover;
+  height: 100vh;
+}
+.pg5 .head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding-top: 120px;
+}
+.pg5 .info {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 2px 15px 70px 15px;
+}
+.pg5 div {
+  text-align: center;
+}
+.pg5 div input {
+  background: rgba(196, 196, 196, 0.1);
+  border: none;
+  width: 48px;
+  height: 55px;
+  margin-right: 8px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+}
+.pg5 div input:focus {
+  border: 1px solid grey;
+  outline: none;
+}
+.pg5 .skip {
+  margin: 130px 0 0px 0;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.pg5 #submit {
+  text-align: center;
+}
+.pg5 #submit button {
+  border-radius: 4px;
+  width: 90%;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+  color: #ECECEC;
+  background: transparent;
+  display: block;
+  color: white;
+  border: 1px solid #FF6600;
+  margin: 20px auto 40px auto;
+}
+.pg5 #submit button:hover {
+  background-color: #FF6600;
+  border: none;
+}
+
+.pg6 {
+  background: #292626;
+  height: cover;
+  height: 100vh;
+}
+.pg6 h2 {
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

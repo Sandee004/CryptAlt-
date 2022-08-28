@@ -9,6 +9,53 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div class="pg5">
+        <p class="head">Create Transaction Pin</p>
+        <p class="info">This pin would be used to approve transactions, it should be known to only you</p>
+        <div class="input-wrap">
+            <input id="pin1" class="pin" type="number" onkeyup="movetoNext(this, 'pin2')" required>
+
+            <input id="pin2" class="pin" type="number" onkeyup="movetoNext(this, 'pin3')" required>
+
+            <input id="pin3" class="pin" type="number" onkeyup="movetoNext(this, 'pin4')" required>
+
+            <input id="pin4" class="pin" type="number" required>
+        </div>
+
+        <a href="page6(homepage).html" class="skip">Skip for now?</a>
+
+        <a id="submit" href="">
+            <button id="btn" onclick="confirm">Continue</button>
+        </a>
+    </div>
+
+    <script>
+        var pin1= document.getElementById("pin1");
+        var pin2= document.getElementById("pin2");
+        var pin3= document.getElementById("pin3");
+        var pin4= document.getElementById("pin4");
+        const btn= document.getElementById("btn")
+        
+        pin1.maxLength= "1"
+        pin2.maxLength= "1"
+        pin3.maxLength= "1"
+        pin4.maxLength= "1"
+
+
+        function movetoNext(current, nextFieldID) {  
+            if (current.value.length >= current.maxLength){  
+            document.getElementById(nextFieldID).focus();  
+            }  
+        }
+
+        btn.addEventListener("click", function() {
+            if (pin4.value.length < 1){
+                alert("Pin should be 4 digits!!!")
+            }
+            else{
+            window.open("page6(homepage).html", "_blank")
+            }
+        })
+    </script>
 </body>
 </html>

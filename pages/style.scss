@@ -9,7 +9,7 @@ body{
     body{
         background: red;
     }
-    .pg1, .pg2, .pg3, .pg4{
+    .pg1, .pg2, .pg3, .pg4, .pg5, .pg6{
         display: none;
     }
 }
@@ -115,10 +115,10 @@ body{
     button{
         background: transparent;
         border: 1px solid white;
-        margin: 0 auto 12px auto;
         display: block;
         font-weight: 500;
         @include btn();
+        margin: 0 auto 20px auto;
     }
 }
 .pg3{
@@ -251,5 +251,70 @@ body{
                 border: none;
             }
         }
+    }
+}
+.pg5{
+    @include pageStr();
+    height: 100vh;
+    .head{
+        @include pageHeader();
+        margin-bottom: 5px;
+        padding-top: 120px;
+    }
+    .info{
+        @include pageHeader();
+        font-size: 14px;
+        font-weight: 400;
+        margin: 2px 15px 70px 15px;
+    }
+    div{
+        text-align: center;
+        input{
+            background: rgba(196, 196, 196, 0.1);
+            border: none;
+            width: 48px;
+            height: 55px;
+            margin-right: 8px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 32px;
+            &:focus{
+                border: 1px solid grey;
+                outline: none;
+            }
+        }
+    }
+    .skip{
+        margin: 130px 0 0px 0;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        
+    }
+    #submit {
+        text-align: center;
+        button {
+            @include btn();
+            background: transparent;
+            display: block;
+            color: white;
+            border: 1px solid #FF6600;
+            margin: 20px auto 40px auto;
+            &:hover {
+                background-color: #FF6600;
+                border: none;
+            }
+        }
+    }
+}
+.pg6{
+    @include pageStr();
+    height: 100vh;
+    h2{
+        color: white;
+        text-align: center;
     }
 }
