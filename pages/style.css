@@ -228,7 +228,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 70px;
-  padding-top: 150px;
+  padding-top: 120px;
 }
 .pg4 form {
   margin-left: 20px;
@@ -254,9 +254,34 @@ body {
   width: 78%;
   width: 90%;
 }
-.pg4 form .checkbox {
-  margin: 10px 3px 2px 0px;
-  display: block;
-  text-align: left;
-  float: left;
+.pg4 form .check {
+  margin: 20px 14px 0 0;
+  display: inline-flex;
+}
+.pg4 form .check input {
+  margin: 2px 0;
+  width: 16px;
+  height: 16px;
+}
+.pg4 form .check span {
+  margin-left: 6px;
+  font-size: 18px;
+}
+.pg4 form button {
+  border-radius: 4px;
+  width: 90%;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+  color: #ECECEC;
+  background: transparent;
+  color: white;
+  border: 1px solid #FF6600;
+  width: 95%;
+  margin: 100px 0 40px 0;
+}
+.pg4 form button:hover {
+  background-color: #FF6600;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
