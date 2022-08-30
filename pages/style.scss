@@ -52,6 +52,15 @@ body{
     font-size: 24px;
     font-weight: 700;
 }
+@mixin bgChange{
+    border-radius: 15px;
+    background: rgba(196, 196, 196, 0.1);
+    display: block;
+    margin: auto;
+    width: 327px;
+    height: 112px;
+    text-align: center;
+}
 
 .pg1{
     @include pageStr();
@@ -312,7 +321,6 @@ body{
 }
 .pg6{
     @include pageStr();
-    height: 100vh;
     .top{
         padding: 40px 20px;
         svg{
@@ -358,18 +366,45 @@ body{
     }
     h3{
         margin: 0 0 15px 20px;
+        font-weight: 400;
     }
     .coins{
-        border-radius: 15px;
-        background: rgba(196, 196, 196, 0.1);
-        display: block;
-        margin: auto;
-        width: 327px;
-        height: 112px;
-        text-align: center;
+        @include bgChange();
         .circle{
             float: left;
             margin: 17px 25px 17px 17px;
+        }
+        .grp{
+            margin: 13px 20px 13px 0;
+            text-align: center;
+           justify-content: center;
+           align-items: center;
+           float: right;
+           display: block;
+           svg{
+            margin: 7px 6px 0 0;
+
+           }
+           div{
+            margin-top: 7px;
+            display: flex;
+            span{
+                margin-left: 60px;
+            }
+           }
+           .one{
+            margin-top: 4px;
+           }
+        }
+    }
+    .grp2{
+        @include bgChange();
+        .left{
+            float: left;
+            border: 2px solid white;
+            p{
+                float: right;
+            }
         }
     }
 }

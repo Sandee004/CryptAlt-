@@ -357,7 +357,6 @@ body {
 .pg6 {
   background: #292626;
   height: cover;
-  height: 100vh;
 }
 .pg6 .top {
   padding: 40px 20px;
@@ -410,6 +409,7 @@ body {
 }
 .pg6 h3 {
   margin: 0 0 15px 20px;
+  font-weight: 400;
 }
 .pg6 .coins {
   border-radius: 15px;
@@ -423,4 +423,41 @@ body {
 .pg6 .coins .circle {
   float: left;
   margin: 17px 25px 17px 17px;
+}
+.pg6 .coins .grp {
+  margin: 13px 20px 13px 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  display: block;
+}
+.pg6 .coins .grp svg {
+  margin: 7px 6px 0 0;
+}
+.pg6 .coins .grp div {
+  margin-top: 7px;
+  display: flex;
+}
+.pg6 .coins .grp div span {
+  margin-left: 60px;
+}
+.pg6 .coins .grp .one {
+  margin-top: 4px;
+}
+.pg6 .grp2 {
+  border-radius: 15px;
+  background: rgba(196, 196, 196, 0.1);
+  display: block;
+  margin: auto;
+  width: 327px;
+  height: 112px;
+  text-align: center;
+}
+.pg6 .grp2 .left {
+  float: left;
+  border: 2px solid white;
+}
+.pg6 .grp2 .left p {
+  float: right;
 }/*# sourceMappingURL=style.css.map */
