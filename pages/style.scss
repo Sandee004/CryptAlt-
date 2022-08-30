@@ -313,8 +313,63 @@ body{
 .pg6{
     @include pageStr();
     height: 100vh;
+    .top{
+        padding: 40px 20px;
+        svg{
+            display: inline;
+            vertical-align: middle;
+        }
+        h3{
+            display: inline;
+            margin: 0 79px;
+        }
+    }
     h2{
-        color: white;
         text-align: center;
+    }
+    .interest{
+        width: 70px;
+        text-align: center;
+        display: block;
+        background-color: rgba(196, 196, 196, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+        color: #20963A;
+        font-size: 14px;
+        margin: 15px auto 30px auto;
+    }
+    .time{
+        text-align: center;
+        margin: 20px 0;
+        span{
+            margin-right: 45px;
+            font-weight: 600;
+            font-size: 17px;
+            &:hover, &::selection{
+                background: white;
+                color: #E45B00;
+                padding: 4px 8px;
+                border-radius: 10px;
+            }
+        }
+        .day{
+            margin-right: 0;
+        }
+    }
+    h3{
+        margin: 0 0 15px 20px;
+    }
+    .coins{
+        border-radius: 15px;
+        background: rgba(196, 196, 196, 0.1);
+        display: block;
+        margin: auto;
+        width: 327px;
+        height: 112px;
+        text-align: center;
+        .circle{
+            float: left;
+            margin: 17px 25px 17px 17px;
+        }
     }
 }

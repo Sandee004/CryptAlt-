@@ -359,7 +359,68 @@ body {
   height: cover;
   height: 100vh;
 }
+.pg6 .top {
+  padding: 40px 20px;
+}
+.pg6 .top svg {
+  display: inline;
+  vertical-align: middle;
+}
+.pg6 .top h3 {
+  display: inline;
+  margin: 0 79px;
+}
 .pg6 h2 {
-  color: white;
   text-align: center;
+}
+.pg6 .interest {
+  width: 70px;
+  text-align: center;
+  display: block;
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  color: #20963A;
+  font-size: 14px;
+  margin: 15px auto 30px auto;
+}
+.pg6 .time {
+  text-align: center;
+  margin: 20px 0;
+}
+.pg6 .time span {
+  margin-right: 45px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.pg6 .time span::-moz-selection {
+  background: white;
+  color: #E45B00;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.pg6 .time span:hover, .pg6 .time span::selection {
+  background: white;
+  color: #E45B00;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.pg6 .time .day {
+  margin-right: 0;
+}
+.pg6 h3 {
+  margin: 0 0 15px 20px;
+}
+.pg6 .coins {
+  border-radius: 15px;
+  background: rgba(196, 196, 196, 0.1);
+  display: block;
+  margin: auto;
+  width: 327px;
+  height: 112px;
+  text-align: center;
+}
+.pg6 .coins .circle {
+  float: left;
+  margin: 17px 25px 17px 17px;
 }/*# sourceMappingURL=style.css.map */
