@@ -408,18 +408,31 @@ body{
     .grp2{
         @include bgChange();
         margin-bottom: 20px;
+        height: 62px;
         .left{
             float: left;
-            border: 2px solid white;
-            margin: auto;
+            padding-top: 8px;
+            margin: auto auto auto 20px;
             display: block;
             svg{
                 vertical-align: middle;
+                width: 34px;
+                height: 34px;
+                margin: 2px 5px 0 4px;
             }
             p{
                 float: right;
                 vertical-align: middle;
+                .big{
+                    font-size: 20px;
+                }
             }
+        }
+        svg{
+        
+        
+        margin: 5px 0 0 0;
+       
         }
     }
 }

@@ -462,17 +462,27 @@ body {
   height: 112px;
   text-align: center;
   margin-bottom: 20px;
+  height: 62px;
 }
 .pg6 .grp2 .left {
   float: left;
-  border: 2px solid white;
-  margin: auto;
+  padding-top: 8px;
+  margin: auto auto auto 20px;
   display: block;
 }
 .pg6 .grp2 .left svg {
   vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  margin: 2px 5px 0 4px;
 }
 .pg6 .grp2 .left p {
   float: right;
   vertical-align: middle;
+}
+.pg6 .grp2 .left p .big {
+  font-size: 20px;
+}
+.pg6 .grp2 svg {
+  margin: 5px 0 0 0;
 }/*# sourceMappingURL=style.css.map */
