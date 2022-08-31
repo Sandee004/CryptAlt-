@@ -350,7 +350,7 @@ body{
         margin: 15px auto 30px auto;
     }
     .chart{
-        width: 100%;
+        width: 95%;
     }
     .time{
         text-align: center;
@@ -376,6 +376,8 @@ body{
     }
     .coins{
         @include bgChange();
+        display: block;
+        margin: auto;
         .circle{
             float: left;
             margin: 17px 25px 17px 17px;
@@ -409,8 +411,14 @@ body{
         .left{
             float: left;
             border: 2px solid white;
+            margin: auto;
+            display: block;
+            svg{
+                vertical-align: middle;
+            }
             p{
                 float: right;
+                vertical-align: middle;
             }
         }
     }

@@ -387,7 +387,7 @@ body {
   margin: 15px auto 30px auto;
 }
 .pg6 .chart {
-  width: 100%;
+  width: 95%;
 }
 .pg6 .time {
   text-align: center;
@@ -425,6 +425,8 @@ body {
   width: 327px;
   height: 112px;
   text-align: center;
+  display: block;
+  margin: auto;
 }
 .pg6 .coins .circle {
   float: left;
@@ -464,7 +466,13 @@ body {
 .pg6 .grp2 .left {
   float: left;
   border: 2px solid white;
+  margin: auto;
+  display: block;
+}
+.pg6 .grp2 .left svg {
+  vertical-align: middle;
 }
 .pg6 .grp2 .left p {
   float: right;
+  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
