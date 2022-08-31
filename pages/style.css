@@ -334,6 +334,7 @@ body {
 }
 .pg5 #submit {
   text-align: center;
+  text-decoration: none;
 }
 .pg5 #submit button {
   border-radius: 4px;
@@ -360,6 +361,8 @@ body {
 }
 .pg6 .top {
   padding: 40px 20px;
+  margin: auto;
+  display: block;
 }
 .pg6 .top svg {
   display: inline;
@@ -367,7 +370,7 @@ body {
 }
 .pg6 .top h3 {
   display: inline;
-  margin: 0 79px;
+  margin: 0 75px;
 }
 .pg6 h2 {
   text-align: center;
@@ -382,6 +385,9 @@ body {
   color: #20963A;
   font-size: 14px;
   margin: 15px auto 30px auto;
+}
+.pg6 .chart {
+  width: 100%;
 }
 .pg6 .time {
   text-align: center;
@@ -453,6 +459,7 @@ body {
   width: 327px;
   height: 112px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .pg6 .grp2 .left {
   float: left;

@@ -305,6 +305,7 @@ body{
     }
     #submit {
         text-align: center;
+        text-decoration: none;
         button {
             @include btn();
             background: transparent;
@@ -323,13 +324,15 @@ body{
     @include pageStr();
     .top{
         padding: 40px 20px;
+        margin: auto;
+        display: block;
         svg{
             display: inline;
             vertical-align: middle;
         }
         h3{
             display: inline;
-            margin: 0 79px;
+            margin: 0 75px;
         }
     }
     h2{
@@ -345,6 +348,9 @@ body{
         color: #20963A;
         font-size: 14px;
         margin: 15px auto 30px auto;
+    }
+    .chart{
+        width: 100%;
     }
     .time{
         text-align: center;
@@ -399,6 +405,7 @@ body{
     }
     .grp2{
         @include bgChange();
+        margin-bottom: 20px;
         .left{
             float: left;
             border: 2px solid white;
