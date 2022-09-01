@@ -334,6 +334,9 @@ body{
             display: inline;
             margin: 0 75px;
         }
+        a{
+            text-decoration: none;
+        }
     }
     h2{
         text-align: center;
@@ -409,10 +412,12 @@ body{
         @include bgChange();
         margin-bottom: 20px;
         height: 62px;
+        text-align: center;
+        display: block;
         .left{
             float: left;
             padding-top: 8px;
-            margin: auto auto auto 20px;
+            margin: auto 15px auto 20px;
             display: block;
             svg{
                 vertical-align: middle;
@@ -429,10 +434,49 @@ body{
             }
         }
         svg{
-        
-        
         margin: 5px 0 0 0;
-       
+        }
+    }
+    .ltr-chart{
+        display: flow-root;
+        padding-top: 20px;
+    }
+    .right{
+        float: right;
+        top: -37px;
+        position: relative;
+        .a{
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .b{
+            font-size: 14px;
+            color: #24A841;
+        }
+        .c{
+            font-size: 14px;
+            color: #F7931A;
+            margin-left: 17px;
+            margin-right: 9px;
+        }
+    }
+
+    .bottom{
+        height: 84px;
+        width: 372px;
+        left: 0px;
+        top: 728px;
+        background: rgba(194, 194, 196, 0.1);
+        backdrop-filter: blur(90px);
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        svg{
+            margin-top: 32px;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
