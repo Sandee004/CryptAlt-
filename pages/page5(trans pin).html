@@ -24,7 +24,7 @@
 
         <a href="page6(homepage).html" class="skip">Skip for now?</a>
 
-        <a id="submit" href="">
+        <a id="submit" href="page6(homepage).html">
             <button id="btn" onclick="confirm">Continue</button>
         </a>
     </div>
@@ -34,7 +34,10 @@
         var pin2= document.getElementById("pin2");
         var pin3= document.getElementById("pin3");
         var pin4= document.getElementById("pin4");
-        const btn= document.getElementById("btn")
+        const btn= document.getElementById("btn");
+        var a= document.getElementById("submit");
+
+        a.originalLink= a.href
         
         pin1.maxLength= "1"
         pin2.maxLength= "1"
@@ -51,9 +54,10 @@
         btn.addEventListener("click", function() {
             if (pin4.value.length < 1){
                 alert("Pin should be 4 digits!!!")
+                a.href= 'javascript:void(0)';
             }
             else{
-            window.open("page6(homepage).html")
+            a.href= a.originalLink;
             }
         })
     </script>
