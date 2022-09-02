@@ -70,9 +70,16 @@
                 alert("Guy....no stress me na!! Passwords don't match")
             }
             else if (pass1.value === pass2.value) {
-                window.open("page4(personal info).html", "_blank")
+                localStorage.setItem("user-n", email.value)
+                var check= localStorage.getItem("user-n")
+                console.log(check)
+               window.open("page4(personal info).html", "_blank")
             }
         })
+
+
+        //saving the inputs to loacalStorage
+        
     </script>
 </body>
 </html>
