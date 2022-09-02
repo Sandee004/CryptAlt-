@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="pg3">
+    <div id="bod" class="pg3">
         <img src="images/logo.png">
         <p class="smallTxt">Welcome to</p>
         <p class="bigTxt">Crypt<span>Alt</span></p>
@@ -20,12 +20,12 @@
             
 
             <label>Password</label>
-            <input type="password" id="password1" maxlength="10">
+            <input type="password" id="password1" maxlength="15">
             <img class="eye" id="eye-icon1" src="images/eye.png">
             
 
             <label>Confirm password</label>
-            <input id="password2" type="password" maxlength="10">
+            <input id="password2" type="password" maxlength="15">
             <img class="eye" id="eye-icon2" src="images/eye.png">
 
             <p>Have an account? <span><a href="page6(homepage).html">Sign In</a></span></p>
@@ -62,23 +62,25 @@
 
         //Password validation
         btn.addEventListener("click", function() {
-            if (pass1.value === "" || pass1.value.length <= 6) {
-                alert("Minimum characters is 7 Chief")
+            if (pass1.value === "" || pass1.value.length < 8) {
+                alert("Minimum password characters is 8 Chief")
             }
             
             else if (pass1.value !== pass2.value) {
-                alert("Guy....no stress me na!! Passwords don't match")
+                alert("Passwords don't match")
             }
             else if (pass1.value === pass2.value) {
                 localStorage.setItem("user-n", email.value)
-                var check= localStorage.getItem("user-n")
-                console.log(check)
-               window.open("page4(personal info).html", "_blank")
+                localStorage.setItem("user-p", pass1.value)
+                var check1 = localStorage.getItem("user-n")
+                var check2 = localStorage.getItem("user-p")
+                //console.log("Mail used= " + check1 + "<br> Passowrd used= " + check2)
+                window.open("page4(personal info).html", "_blank")
             }
         })
 
 
-        //saving the inputs to loacalStorage
+
         
     </script>
 </body>
