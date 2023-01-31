@@ -13,13 +13,13 @@
         <p class="head">Create Transaction Pin</p>
         <p class="info">This pin would be used to approve transactions, it should be known to only you</p>
         <div class="input-wrap">
-            <input id="pin1" class="pin" type="number" onkeyup="movetoNext(this, 'pin2')" required>
+            <input id="pin1" class="pin" name="pincode" type="password" inputmode="numeric" maxlength="1" onkeyup="movetoNext(this, 'pin2')" required>
 
-            <input id="pin2" class="pin" type="number" onkeyup="movetoNext(this, 'pin3')" required>
+            <input id="pin2" class="pin" name="pincode" type="password" inputmode="numeric" maxlength="1" onkeyup="movetoNext(this, 'pin3')" required>
 
-            <input id="pin3" class="pin" type="number" onkeyup="movetoNext(this, 'pin4')" required>
+            <input id="pin3" class="pin" name="pincode" type="password" inputmode="numeric" maxlength="1" onkeyup="movetoNext(this, 'pin4')" required>
 
-            <input id="pin4" class="pin" type="number" required>
+            <input id="pin4" class="pin" name="pincode" type="password" inputmode="numeric" maxlength="1" required>
         </div>
 
         <a href="page6(homepage).html" class="skip">Skip for now?</a>
@@ -38,12 +38,6 @@
         var a= document.getElementById("submit");
 
         a.originalLink= a.href
-        
-        pin1.maxLength= "1"
-        pin2.maxLength= "1"
-        pin3.maxLength= "1"
-        pin4.maxLength= "1"
-
 
         function movetoNext(current, nextFieldID) {  
             if (current.value.length >= current.maxLength){  
